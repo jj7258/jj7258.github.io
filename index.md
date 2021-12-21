@@ -20,6 +20,7 @@
 ## 🛠 Skills
   - 🖥️**C, C++, Python, SQL, HTML** 
   - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion** 
+  - 🗣️**English, Hindi, Malayalam, Tamil
   - 🤵🏽‍♂️**Other Skills:**
      - **Video Editing: DaVinci Resolve, Adobe Premier Pro**
      - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
