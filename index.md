@@ -1,3 +1,4 @@
+
 # Hi, I'm Joel Georgie Jacob! 👋
 
 
@@ -11,14 +12,17 @@
 
 
 ## 🛠 Skills
-C, C++, Python, SQL, HTML 
-
+**C, C++, Python, SQL, HTML, PowerPoint** 
 
 ## ☎️Contact:
 
 ## 🔗 Links
 
 
+
+## Certificates 📜
+
+## Education
 
 
 
