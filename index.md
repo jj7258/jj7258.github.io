@@ -28,4 +28,4 @@
 - [Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
    
 ## 📜 Certificates
-
+ - [Blockchain Basics](coursera.org/verify/9XPZ4BEV3NDC)
