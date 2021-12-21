@@ -15,6 +15,7 @@
 **C, C++, Python, SQL, HTML, PowerPoint** 
 
 ## ☎️Contact:
+   ![Github](/assets/images/GitHub-Mark-32px.png)
 
 ## 🔗 Links
 
