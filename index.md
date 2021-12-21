@@ -3,12 +3,12 @@
 
 
 ## 🚀 About Me
-  👨‍💻**Aspiring Data Scientist**
-  🤖**Robotics & Automation Engineer in the making**
-  🪙**Blockchain Enthusiast** 
-  📱💻**Avid Tech Enthusiast**
-  🎮🕹️**Casual Gamer**
-
+  👨‍💻**Aspiring Data Scientist**    
+  🤖**Robotics & Automation Engineer in the making**    
+  🪙**Blockchain Enthusiast**     
+  📱💻**Avid Tech Enthusiast**    
+  🎮🕹️**Casual Gamer**   
+      
 ## ☎️Contact:
    ![Email](/images/icons8-gmail.svg) **Email:** <joelj7258@gmail.com>
    
