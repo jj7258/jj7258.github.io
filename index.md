@@ -23,11 +23,10 @@
 ## 🛠 Skills
    - 🖥️**C, C++, Python, SQL, HTML** 
    - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion**
-   - 🤵🏽‍♂️Other Skills:
+   - 🤵🏽‍♂️**Other Skills:
        - Editing: DaVinci Resolve, Adobe Premier Pro
-       - Productivity: Microsoft Office Suite, Google Workspace, LibreOffice
-     
-     
+       - Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
+          
 ## 🎓 Education 
    - [BTech in Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) | Saintgits College Of Engineering, Kerala [2020-Current]          
 - [Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
