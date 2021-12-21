@@ -3,13 +3,15 @@
 
 
 ## 🚀 About Me
-👨‍💻**Aspiring Data Scientist**
+  👨‍💻**Aspiring Data Scientist**
 
-🤖**Robotics & Automation Engineer in the making**
+  🤖**Robotics & Automation Engineer in the making**
 
-🪙**Blockchain Enthusiast** 
+  🪙**Blockchain Enthusiast** 
 
-📱💻**Avid Tech Enthusiast**
+  📱💻**Avid Tech Enthusiast**
+
+  🎮🕹️**Casual Gamer**
 
 ## ☎️Contact:
    ![Email](/images/icons8-gmail.svg) Email: <joelj7258@gmail.com>
@@ -19,9 +21,13 @@
    [![Twitter](/images/icons8-twitter.svg)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
    
 ## 🛠 Skills
-**C, C++, Python, SQL, HTML** 
-
-
+   - 🖥️**C, C++, Python, SQL, HTML** 
+   - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion**
+   - 🤵🏽‍♂️Other Skills:
+       - Editing: DaVinci Resolve, Adobe Premier Pro
+       - Productivity: Microsoft Office Suite, Google Workspace, LibreOffice
+     
+     
 ## 🎓 Education 
    - [BTech in Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) | Saintgits College Of Engineering, Kerala [2020-Current]          
 - [Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
