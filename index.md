@@ -26,7 +26,7 @@
    - 🖥️**C, C++, Python, SQL, HTML** 
    - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion**
    - 🤵🏽‍♂️**Other Skills:**
-       - **Editing: DaVinci Resolve, Adobe Premier Pro**
+       - **Video Editing: DaVinci Resolve, Adobe Premier Pro**
        - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
 
 
@@ -38,3 +38,6 @@
 
 ## 📜 Certificates
  - [Blockchain Basics](https://www.coursera.org/verify/9XPZ4BEV3NDC/) | Coursera [Nov 8,2021]
+
+## Hobbies
+
