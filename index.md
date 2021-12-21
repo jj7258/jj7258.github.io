@@ -16,8 +16,8 @@
 
 ## ☎️Contact:
    [![Github](/images/github.svg)](https://github.com/jj7258)
-   [![Instagram](/images/](https://www.instagram.com/joelj7258)
-   [![Twitter](/images/)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
+   [![Instagram](/images/icons8-instagram.svg)](https://www.instagram.com/joelj7258)
+   [![Twitter](/images/icons8-twitter.gif)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
 
 ## Education
 
