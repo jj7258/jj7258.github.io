@@ -1,6 +1,5 @@
                                    
-[jj7258.github.io](https://jj7258.github.io)
-# ![Banner](/images/banner.png)
+[![Banner](/images/banner.png)](https://jj7258.github.io)
 
 
 ## 🚀 About Me
