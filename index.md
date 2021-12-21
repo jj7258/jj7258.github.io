@@ -15,7 +15,7 @@
 **C, C++, Python, SQL, HTML, PowerPoint** 
 
 ## ☎️Contact:
-   ![Github](/images/github.svg):
+   ![Github](/images/github.svg)[link](https://github.com/jj7258)
 
 
 
