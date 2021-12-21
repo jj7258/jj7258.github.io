@@ -32,12 +32,12 @@
 
 ## 🎓 Education 
    - [BTech in Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) | Saintgits College Of Engineering, Kerala [2020-Current]          
-                                                                                                                                                        /
+                                                                                                                                                        
 - [Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
 
 
 ## 📜 Certificates
  - [Blockchain Basics](https://www.coursera.org/verify/9XPZ4BEV3NDC/) | Coursera [Nov 8,2021]
 
-## Hobbies
+## 🏓 Hobbies
 
