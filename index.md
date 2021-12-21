@@ -9,6 +9,8 @@
 
 🪙**Blockchain Enthusiast** 
 
+📱💻**Avid Tech Enthusiast**
+
 
 
 ## 🛠 Skills
