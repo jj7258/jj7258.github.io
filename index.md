@@ -9,6 +9,7 @@
   ➡️📱💻**Avid Tech Enthusiast**    
   ➡️🎮🕹️**Casual Gamer**   
       
+      
 ## ☎️ Contact:
    ![Email](/images/icons8-gmail.svg) **Email:** <joelj7258@gmail.com>
    
@@ -34,6 +35,7 @@
 
 ## 📜 Certificates
  - [Blockchain Basics](https://www.coursera.org/verify/9XPZ4BEV3NDC/) | Coursera [Nov 8,2021]
+
 
 ## 🏓 Hobbies
  - During my free time I play games such as Assassin Creed II, Rocket League, Fortnite, Forza Horizon 6:Apex, CS:GO etc.
