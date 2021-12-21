@@ -1,6 +1,6 @@
                                    
-# jj7258.github.io
-# Hi, I'm Joel Georgie Jacob! 👋
+# ![Banner](/images/banner.png)
+## jj7258.github.io
 
 
 ## 🚀 About Me
