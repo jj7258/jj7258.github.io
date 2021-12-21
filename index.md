@@ -15,9 +15,9 @@
 **C, C++, Python, SQL, HTML, PowerPoint** 
 
 ## ☎️Contact:
-   [![Github](/images/github.svg)](https://github.com/jj7258)
+   [![Github](/images/icons8-github.svg)](https://github.com/jj7258)
    [![Instagram](/images/icons8-instagram.svg)](https://www.instagram.com/joelj7258)
-   [![Twitter](/images/icons8-twitter.gif)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
+   [![Twitter](/images/icons8-twitter.svg)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
 
 ## Education
 
