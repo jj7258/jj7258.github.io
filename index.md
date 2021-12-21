@@ -18,11 +18,11 @@
    
    
 ## 🛠 Skills
-   - 🖥️**C, C++, Python, SQL, HTML** 
-   - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion**
-   - 🤵🏽‍♂️**Other Skills:**
-       - **Video Editing: DaVinci Resolve, Adobe Premier Pro**
-       - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
+  - 🖥️**C, C++, Python, SQL, HTML** 
+  - 🤝**Soft Skills:Public Speaking, Presentation, Group Discussion** 
+  - 🤵🏽‍♂️**Other Skills:**
+     - **Video Editing: DaVinci Resolve, Adobe Premier Pro**
+     - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
 
 
 ## 🎓 Education 
