@@ -24,8 +24,8 @@
    [![Twitter](/images/icons8-twitter.svg)](https://twitter.com/Joelj7258?t=HLq7vAP_LzGPfu7dEHritA&s=08)
 
 ## 🎓 Education 
-   [BTech Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) | Saintgits College Of Engineering, Kerala [2020-Current]\ 
-      [Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
+   [BTech Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) | Saintgits College Of Engineering, Kerala [2020-Current]
+[Bsc in Programming & Data Science](https://onlinedegree.iitm.ac.in/) |  Indian Institute of Technology Madras Qualified [July 2021] Foundation Level [Current]
    
 ## 📜 Certificates
 
