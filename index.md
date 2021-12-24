@@ -39,6 +39,6 @@
 
 ## 🏓 Hobbies
  - During my free time I play games such as Assassin's Creed-II, Rocket League, Fortnite, Forza Horizon 6:Apex, CS:GO etc.
- - I have also recently started watching anime such as Demon Slayer, Naruto, One Piece and much more.
+ - I have recently started watching anime such as Demon Slayer, Naruto, One Piece, Dragon Ball Z and much more.
  - I also watch videos about what is happening latest in the world of science and technology.
 
