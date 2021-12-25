@@ -27,7 +27,7 @@
      - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
 
 
-## Statistics
+## 📈 Statistics
   ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jj7258&show_icons=true)
 
 
