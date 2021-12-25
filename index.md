@@ -27,6 +27,10 @@
      - **Productivity: Microsoft Office Suite, Google Workspace, LibreOffice**
 
 
+## Statistics
+ [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jj7258)](https://github.com/anuraghazra/github-readme-stats)
+
+
 ## 🎓 Education 
    - [BTech in Robotics & Automation](https://saintgits.org/engineering-college/departments/robotics-and-automation-engineering/) |  Saintgits College Of Engineering, Kerala [2020-2024]          
                                                                                                                                                         
