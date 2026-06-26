@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Joel Georgie Jacob — Robotics Engineer</title>
+  <meta name="description" content="Associate Robotics Engineer specialising in autonomous navigation, SLAM, LiDAR-inertial odometry, and robot fleet deployment at Strider Robotics, IISc.">
+  <meta name="keywords" content="robotics, ROS2, SLAM, autonomous navigation, embedded systems, computer vision, LiDAR, perception">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="pl-inner">
+      <div class="pl-logo">JGJ</div>
+      <div class="pl-line"></div>
+    </div>
+  </div>
+
+  <!-- Cursor elements -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Header / Sidebar Nav -->
+  <header id="header">
+    <a href="#hero" class="header-brand" aria-label="Home">JGJ</a>
+
+    <nav id="navmenu" aria-label="Main navigation">
+      <a href="#hero" class="nav-icon active" data-label="Home" aria-label="Home">
+        <i class="bi bi-house"></i>
+      </a>
+      <a href="#about" class="nav-icon" data-label="About" aria-label="About">
+        <i class="bi bi-person"></i>
+      </a>
+      <a href="#skills" class="nav-icon" data-label="Skills" aria-label="Skills">
+        <i class="bi bi-cpu"></i>
+      </a>
+      <a href="#experience" class="nav-icon" data-label="Experience" aria-label="Experience">
+        <i class="bi bi-briefcase"></i>
+      </a>
+      <a href="#projects" class="nav-icon" data-label="Projects" aria-label="Projects">
+        <i class="bi bi-code-square"></i>
+      </a>
+      <a href="#education" class="nav-icon" data-label="Education" aria-label="Education">
+        <i class="bi bi-mortarboard"></i>
+      </a>
+      <a href="#contact" class="nav-icon" data-label="Contact" aria-label="Contact">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </nav>
+
+    <div class="header-socials">
+      <a href="https://github.com/jj7258" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="mailto:joelgj02@gmail.com" aria-label="Email">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+
+    <button class="header-toggle" id="headerToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero section">
+      <div class="hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-sub mono" data-aos="fade-up" data-aos-delay="0">
+            INITIALIZED <span class="hero-sep">//</span> READY
+          </p>
+          <h1 class="hero-name" data-aos="fade-up" data-aos-delay="80">
+            Joel<br>Georgie<br>Jacob
+          </h1>
+          <p class="hero-role mono" data-aos="fade-up" data-aos-delay="160">
+            <span class="role-arrow">→</span>
+            <span class="typed" data-typed-items="Autonomous Navigation,SLAM Research,Perception Engineering,Robot Fleet Deployment,ROS2 Development"></span>
+          </p>
+          <p class="hero-bio" data-aos="fade-up" data-aos-delay="220">
+            Associate Robotics Engineer at <strong>Strider Robotics, IISc Bangalore</strong> —
+            building and deploying autonomous navigation stacks on quadruped and wheeled robot platforms.
+          </p>
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="280">
+            <a href="#projects" class="btn-primary">
+              View Projects <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="#contact" class="btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-in" data-aos-delay="200">
+          <canvas id="radar-canvas" aria-hidden="true"></canvas>
+          <div class="radar-hud" aria-hidden="true">
+            <span class="mono radar-label">SLAM // LIDAR SCAN</span>
+            <span class="mono radar-status">SYS: ONLINE</span>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll to About">
+        <span class="mono">scroll</span>
+        <i class="bi bi-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">01</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">About Me</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Who I Am</h2>
+
+        <div class="about-grid">
+
+          <div class="about-left" data-aos="fade-right" data-aos-delay="100">
+            <div class="monogram-avatar" aria-label="Joel Georgie Jacob initials — replace with actual photo">
+              <span>JGJ</span>
+            </div>
+            <div class="about-info">
+              <div class="info-row">
+                <span class="mono info-key">location</span>
+                <span class="info-val">Bangalore, India</span>
+              </div>
+              <div class="info-row">
+                <span class="mono info-key">org</span>
+                <span class="info-val">Strider Robotics, IISc</span>
+              </div>
+              <div class="info-row">
+                <span class="mono info-key">email</span>
+                <a href="mailto:joelgj02@gmail.com" class="info-val info-link">joelgj02@gmail.com</a>
+              </div>
+              <div class="info-row">
+                <span class="mono info-key">github</span>
+                <a href="https://github.com/jj7258" target="_blank" rel="noopener" class="info-val info-link">jj7258</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right" data-aos="fade-left" data-aos-delay="150">
+            <p class="about-bio">
+              Robotics &amp; Automation graduate (B.Tech, Saintgits College of Engineering — ranked 6th/68)
+              working as an Associate Robotics Engineer at <strong>Strider Robotics, ARTPARK, IISc Bangalore</strong>.
+              Pursuing a B.Sc. in Data Science &amp; Applications from <strong>IIT Madras</strong> in parallel.
+            </p>
+            <p class="about-bio">
+              My work spans the full autonomy stack — SLAM benchmarking, LiDAR-inertial odometry, production
+              deployments on Unitree Go2-W and Deep Robotics X30 Pro, telemetry infrastructure, and
+              field navigation research with 20+ successful waypoint trials.
+            </p>
+
+            <div class="stat-wall">
+              <div class="stat-item">
+                <span class="stat-n mono">4<span class="stat-plus">+</span></span>
+                <span class="stat-l">Years in Robotics</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-n mono">20<span class="stat-plus">+</span></span>
+                <span class="stat-l">Navigation Trials</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-n mono">6</span>
+                <span class="stat-l">Projects Shipped</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-n mono">3</span>
+                <span class="stat-l">Robot Platforms</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills section section-alt">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">02</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">Technical Stack</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Skills &amp; Tools</h2>
+
+        <div class="skills-matrix" data-aos="fade-up" data-aos-delay="120">
+
+          <div class="skills-col">
+            <h4 class="mono skills-col-head">ROBOTICS &amp; NAV</h4>
+            <ul class="skills-list">
+              <li>ROS2</li>
+              <li>Nav2</li>
+              <li>SLAM</li>
+              <li>RTAB-Map</li>
+              <li>Slam-Toolbox</li>
+              <li>LiDAR</li>
+              <li>IMU</li>
+              <li>LIO</li>
+              <li>Waypoint Nav</li>
+            </ul>
+          </div>
+
+          <div class="skills-col">
+            <h4 class="mono skills-col-head">PROGRAMMING</h4>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>C++</li>
+              <li>Git</li>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Bash</li>
+              <li>React</li>
+            </ul>
+          </div>
+
+          <div class="skills-col">
+            <h4 class="mono skills-col-head">PERCEPTION</h4>
+            <ul class="skills-list">
+              <li>OpenCV</li>
+              <li>Computer Vision</li>
+              <li>YOLOv8</li>
+              <li>Depth Camera</li>
+              <li>Point Cloud</li>
+              <li>Intel RealSense</li>
+            </ul>
+          </div>
+
+          <div class="skills-col">
+            <h4 class="mono skills-col-head">SIM &amp; MODELLING</h4>
+            <ul class="skills-list">
+              <li>Gazebo</li>
+              <li>Isaac Sim</li>
+              <li>COLMAP</li>
+              <li>GLOMAP</li>
+              <li>GSplat</li>
+              <li>Fusion 360</li>
+              <li>3D Printing</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="experience section">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">03</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">Work History</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Experience</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-entry" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-left">
+              <span class="mono tl-date">Jun 2025<br>Present</span>
+              <div class="tl-track">
+                <div class="tl-node current"></div>
+                <div class="tl-bar"></div>
+              </div>
+            </div>
+            <div class="timeline-right bracket-card tilt-card">
+              <h4 class="tl-role">Associate Robotics Engineer</h4>
+              <p class="mono tl-company">Strider Robotics · ARTPARK, IISc · Bangalore</p>
+              <ul class="tl-bullets">
+                <li><strong>Navigation Research:</strong> Leading multi-floor &amp; outdoor navigation on Unitree Go2-W using custom ROS2 SDK; benchmarked SoTA SLAM packages at IISc's ARTGarage.</li>
+                <li><strong>LIO Deployment:</strong> Benchmarked LiDAR-Inertial Odometry candidates, made the deployment decision, shipped the selected system — now in active production fleet-wide.</li>
+                <li><strong>Telemetry:</strong> Independently designed and deployed structured log routing &amp; real-time monitoring used across all deployed platforms.</li>
+                <li><strong>Integration:</strong> Contributed to autonomy stack deployment on Go2, Go2-W, and Deep Robotics X30 Pro; achieved 20+ successful waypoint navigation trials.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>ROS2</span><span>SLAM</span><span>Nav2</span><span>LiDAR</span><span>Python</span><span>C++</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-entry" data-aos="fade-up" data-aos-delay="130">
+            <div class="timeline-left">
+              <span class="mono tl-date">Dec 2024<br>May 2025</span>
+              <div class="tl-track">
+                <div class="tl-node"></div>
+                <div class="tl-bar"></div>
+              </div>
+            </div>
+            <div class="timeline-right bracket-card tilt-card">
+              <h4 class="tl-role">Robotics Intern</h4>
+              <p class="mono tl-company">Strider Robotics · ARTPARK, IISc · Bangalore</p>
+              <ul class="tl-bullets">
+                <li><strong>Strider GUI V1:</strong> Engineered a desktop app (customtkinter + viser) for real-time GSplat visualisation and mission planning; Dockerized for stable deployment.</li>
+                <li><strong>Simulation:</strong> Integrated Unitree Go1 into Gazebo with LiDAR, Intel RealSense, Nav2, and Slam-Toolbox for reliable sim-to-real transfer.</li>
+                <li><strong>Mapping Pipelines:</strong> Built GPU-accelerated SfM pipelines (GLOMAP); converted GSplat models to meshes via SUGAR for Isaac Sim testing.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>ROS2</span><span>Gazebo</span><span>Docker</span><span>GSplat</span><span>GLOMAP</span><span>Isaac Sim</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-entry" data-aos="fade-up" data-aos-delay="160">
+            <div class="timeline-left">
+              <span class="mono tl-date">May 2023<br>Jul 2023</span>
+              <div class="tl-track">
+                <div class="tl-node"></div>
+                <div class="tl-bar"></div>
+              </div>
+            </div>
+            <div class="timeline-right bracket-card tilt-card">
+              <h4 class="tl-role">Industrial Trainee</h4>
+              <p class="mono tl-company">Intel Unnati Summer 2023 · Intel Corporation · Remote</p>
+              <ul class="tl-bullets">
+                <li>Built an automated road defect detection system. Final YOLOv8 model achieved <strong>92.7% precision</strong> and <strong>92.8% mAP</strong> on the IDD dataset, outperforming YOLOv5 baseline (89.3% mAP).</li>
+              </ul>
+              <div class="tl-tags">
+                <span>Python</span><span>YOLOv8</span><span>Roboflow</span><span>Computer Vision</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-entry" data-aos="fade-up" data-aos-delay="190">
+            <div class="timeline-left">
+              <span class="mono tl-date">Sep 2022<br>Mar 2023</span>
+              <div class="tl-track">
+                <div class="tl-node"></div>
+              </div>
+            </div>
+            <div class="timeline-right bracket-card tilt-card">
+              <h4 class="tl-role">Project Intern</h4>
+              <p class="mono tl-company">Unique World Robotics · UAE · Remote</p>
+              <ul class="tl-bullets">
+                <li>Developed an interactive Information Kiosk integrating PyQt5, Open Weather API, and Google Drive API; deployed for daily use across a school campus.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>Python</span><span>PyQt5</span><span>APIs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects section section-alt">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">04</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">What I've Built</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Projects</h2>
+
+        <div class="projects-list">
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="pe-num mono">01</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">unitree_go2w_ros2</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">2025</span>
+                  <span class="pe-badge">Open Source</span>
+                </div>
+              </div>
+              <p class="pe-desc">Open-source ROS2 integration for the Unitree Go2-W — custom SDK for low-level control, state estimation, and URDF configurations. Foundational bridge for all SoTA SLAM and navigation research on the Go2-W platform.</p>
+              <div class="pe-tags">
+                <span>ROS2</span><span>C++</span><span>SLAM</span><span>Nav2</span><span>URDF</span>
+              </div>
+              <a href="https://github.com/jj7258/unitree_go2w_ros2" target="_blank" rel="noopener" class="pe-link mono">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="pe-num mono">02</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">NavRover</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">Aug 2024</span>
+                </div>
+              </div>
+              <p class="pe-desc">Open-source ROS-based autonomous rover with 4-wheeled rocker mechanism. Implemented DWA planner; achieved 2D and 3D environment mapping (Octomap + RTABMap). Built during Buildspace Nights &amp; Weekends S5.</p>
+              <div class="pe-tags">
+                <span>ROS Noetic</span><span>Python</span><span>Gazebo</span><span>Docker</span><span>RTABMap</span>
+              </div>
+              <a href="https://github.com/jj7258/NavRover" target="_blank" rel="noopener" class="pe-link mono">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="pe-num mono">03</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">Autonomous Exploration Rover</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">Apr 2024</span>
+                  <span class="pe-badge">B.Tech Thesis</span>
+                </div>
+              </div>
+              <p class="pe-desc">Final-year thesis. Autonomous rover with IMU, Hall effect encoders, depth camera, Nvidia Jetson Nano, and 6-DOF manipulator. Integrated GMapping, RTABMap, and ROS Nav Stack for 2D/3D SLAM. Secured 2nd place among final-year projects.</p>
+              <div class="pe-tags">
+                <span>ROS Noetic</span><span>Jetson Nano</span><span>RTABMap</span><span>Arduino</span><span>Python</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1H4sHGYRPGfMQBwuxDTiyrNKeRgvNtVIF/view" target="_blank" rel="noopener" class="pe-link mono">
+                Demo ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="pe-num mono">04</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">Pothole Detection — Deep Learning</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">Jul 2023</span>
+                  <span class="pe-badge">Intel Unnati</span>
+                </div>
+              </div>
+              <p class="pe-desc">Road defect detection for Indian infrastructure using computer vision. YOLOv8 model hit <strong>92.7% precision</strong> and <strong>92.8% mAP</strong> on IDD dataset — outperforming YOLOv5 baseline.</p>
+              <div class="pe-tags">
+                <span>YOLOv8</span><span>Python</span><span>Roboflow</span><span>IDD Dataset</span>
+              </div>
+              <a href="https://github.com/jj7258/intelunnati_Byte-Brigade" target="_blank" rel="noopener" class="pe-link mono">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="pe-num mono">05</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">ROS 3D Mapping Rover + React UI</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">Jun 2023</span>
+                </div>
+              </div>
+              <p class="pe-desc">Teleoperated rover with 4-wheeled rocker mechanism and a React web interface for 3D environment mapping. Presented at KTU KETCON 2024.</p>
+              <div class="pe-tags">
+                <span>ROS1</span><span>React</span><span>RTABMap</span><span>Fusion 360</span><span>Arduino</span>
+              </div>
+              <a href="https://github.com/jj7258/ROS-Based-Rover-With-3DMapping-and-User-Interface" target="_blank" rel="noopener" class="pe-link mono">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="project-entry tilt-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="pe-num mono">06</div>
+            <div class="pe-body">
+              <div class="pe-head">
+                <h3 class="pe-title">Information Kiosk — School Campus</h3>
+                <div class="pe-meta">
+                  <span class="mono pe-year">Mar 2023</span>
+                </div>
+              </div>
+              <p class="pe-desc">Interactive campus kiosk with real-time weather, Google Drive content, and navigation. Deployed for daily use by students, staff, and visitors during a 7-month internship at Unique World Robotics, UAE.</p>
+              <div class="pe-tags">
+                <span>Python</span><span>PyQt5</span><span>OpenWeather API</span><span>Google Drive API</span>
+              </div>
+              <a href="https://github.com/jj7258/expert-guide" target="_blank" rel="noopener" class="pe-link mono">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="education section">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">05</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">Academic Background</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Education</h2>
+
+        <div class="edu-grid">
+
+          <div class="bracket-card edu-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="edu-badge mono">B.Tech</div>
+            <h4 class="edu-degree">Robotics and Automation</h4>
+            <p class="edu-inst">Saintgits College of Engineering</p>
+            <p class="mono edu-loc">Kottayam, Kerala · Dec 2020 – Jul 2024</p>
+            <div class="edu-stats">
+              <span class="edu-stat"><span class="mono">8.31</span> / 10</span>
+              <span class="edu-stat">Ranked <span class="mono">6th</span> / 68</span>
+            </div>
+            <div class="edu-highlights">
+              <span>Thesis: Autonomous Rover</span>
+              <span>2nd Place — Final Year Project</span>
+            </div>
+          </div>
+
+          <div class="bracket-card edu-card tilt-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="edu-badge mono">B.Sc.</div>
+            <h4 class="edu-degree">Data Science &amp; Applications</h4>
+            <p class="edu-inst">Indian Institute of Technology — Madras</p>
+            <p class="mono edu-loc">Chennai, Tamil Nadu · Sep 2021 – Present</p>
+            <div class="edu-stats">
+              <span class="edu-stat"><span class="mono">7.0</span> / 10 GPA</span>
+              <span class="edu-stat">Online + Hybrid</span>
+            </div>
+            <div class="edu-highlights">
+              <span>Pursued in parallel with B.Tech</span>
+              <span>IIT Madras Robotics Club</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Awards -->
+        <div class="awards-section" data-aos="fade-up" data-aos-delay="160">
+          <h3 class="mono awards-title">// AWARDS &amp; CERTIFICATIONS</h3>
+          <div class="awards-list">
+            <div class="award-row">
+              <i class="bi bi-trophy-fill award-icon"></i>
+              <div class="award-body">
+                <strong>Rank Holder</strong>
+                <span class="mono">6th / 68 · B.Tech Robotics &amp; Automation · Saintgits 2024</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <i class="bi bi-award-fill award-icon"></i>
+              <div class="award-body">
+                <strong>2nd Place — Final Year Project</strong>
+                <span class="mono">Autonomous Exploration Rover · RB-B 2020–24</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <i class="bi bi-cloud-fill award-icon"></i>
+              <div class="award-body">
+                <strong>Google Cloud Foundations</strong>
+                <span class="mono">Google Cloud · Oct 2023</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <i class="bi bi-patch-check-fill award-icon"></i>
+              <div class="award-body">
+                <strong>Foundation in Programming &amp; Data Science</strong>
+                <span class="mono">IIT Madras · May 2023 · Hybrid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section section-alt">
+      <div class="container">
+
+        <div class="section-eyebrow" data-aos="fade-up">
+          <span class="mono eyebrow-num">06</span>
+          <span class="eyebrow-line"></span>
+          <span class="mono eyebrow-label">Get In Touch</span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="60">Contact</h2>
+
+        <div class="contact-block" data-aos="fade-up" data-aos-delay="100">
+          <p class="contact-intro">
+            Open to research collaborations, robotics roles, and interesting project conversations.
+          </p>
+
+          <div class="contact-rows">
+            <a href="mailto:joelgj02@gmail.com" class="contact-row">
+              <div class="cr-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div class="cr-body">
+                <span class="mono cr-label">email</span>
+                <span class="cr-val">joelgj02@gmail.com</span>
+              </div>
+              <span class="cr-arrow">↗</span>
+            </a>
+
+            <a href="https://github.com/jj7258" target="_blank" rel="noopener" class="contact-row">
+              <div class="cr-icon"><i class="bi bi-github"></i></div>
+              <div class="cr-body">
+                <span class="mono cr-label">github</span>
+                <span class="cr-val">github.com/jj7258</span>
+              </div>
+              <span class="cr-arrow">↗</span>
+            </a>
+
+            <div class="contact-row non-link">
+              <div class="cr-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="cr-body">
+                <span class="mono cr-label">location</span>
+                <span class="cr-val">Bangalore, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="mono footer-brand">JGJ</span>
+        <span class="mono footer-copy">&copy; 2026 Joel Georgie Jacob</span>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

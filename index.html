@@ -1,817 +1,530 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - MyResume Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joel Georgie Jacob — Robotics Engineer</title>
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Associate Robotics Engineer at Strider Robotics, IISc Bangalore — SLAM, LiDAR navigation, autonomous fleet deployment.">
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Fonts: Lora (serif headlines) · Plus Jakarta Sans · JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Main stylesheet -->
+  <link href="assets/css/main.css?v=14" rel="stylesheet">
 </head>
+<body>
 
-<body class="index-page">
+  <!-- PRELOADER -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pl-logo">JGJ</div>
+    <div class="pl-bar"><div class="pl-fill"></div></div>
+  </div>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+  <!-- FLOATING PILL NAV -->
+  <header id="header">
+    <nav class="pill-nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        JGJ
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
+      <div class="nav-end">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
     </nav>
-
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <main class="main">
+  <main>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <!-- ═══ HERO ══════════════════════════════════════════════════════ -->
+    <section id="hero" class="wrap hero reveal">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <span class="dot"></span>
+          Associate Robotics Engineer · ARTPARK, IISc Bangalore
+        </span>
 
-      <img src="assets/img/hero-bg.jpg" alt="">
+        <h1>Joel Georgie Jacob</h1>
 
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Brandon Johnson</h2>
-            <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+        <p class="hero-tagline">I build autonomous navigation for robots in the real world.</p>
+
+        <p class="lede">
+          Currently at Strider Robotics / ARTPARK, IISc Bangalore — working on SLAM,
+          sensor fusion, and production deployments on legged platforms.
+          Open to research collaboration.
+        </p>
+
+        <div class="actions">
+          <a href="#projects" class="btn-pill">
+            <span>View Work</span>
+            <span class="iw" aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═════════════════════════════════════════════════════ -->
+    <section id="about" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>01 · About</span></div>
+
+        <div class="about-prose reveal">
+          <p>
+            I'm an Associate Robotics Engineer at <strong>Strider Robotics, ARTPARK,
+            IISc Bangalore</strong> — building the navigation systems that let robots
+            operate in real-world conditions outside controlled environments.
+          </p>
+          <p>
+            At Strider / ARTPARK, IISc, I own the full autonomy pipeline for quadruped
+            robots — evaluating and selecting odometry and mapping stacks, deploying on
+            Unitree Go2-W and Deep Robotics hardware, and monitoring systems live in the
+            field. The work reaches production: the pipelines I've built are actively
+            used by Fortune 500 clients through Strider's fleet.
+          </p>
+          <p>
+            Working at that scale has sharpened one question I keep running into: systems
+            that perform well in structured environments degrade predictably when conditions
+            change. My background in both Robotics &amp; Automation (B.Tech, top-6,
+            Saintgits) and Data Science (B.Sc., IIT Madras) converges exactly here —
+            at the intersection of classical estimation and learned representations, which
+            is where I think the generalization problem has to be solved.
+          </p>
+          <div class="info-rows">
+            <div class="info-row">
+              <span class="info-key">email</span>
+              <a href="mailto:joelgj02@gmail.com" class="info-val link">joelgj02@gmail.com</a>
+            </div>
+            <div class="info-row">
+              <span class="info-key">github</span>
+              <a href="https://github.com/jj7258" target="_blank" rel="noopener" class="info-val link">github.com/jj7258</a>
+            </div>
+            <div class="info-row">
+              <span class="info-key">location</span>
+              <span class="info-val">Bangalore, Karnataka, India</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- ═══ SKILLS ════════════════════════════════════════════════════ -->
+    <section id="skills" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>02 · Skills</span></div>
+        <h2 class="sec-title reveal">What I work with</h2>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        <div class="skill-table reveal">
+          <div class="skill-row">
+            <span class="skill-label">Navigation</span>
+            <span class="skill-items">ROS2 · Nav2 · SLAM · RTAB-Map · Slam-Toolbox · Fast-LIO2</span>
           </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+          <div class="skill-row">
+            <span class="skill-label">Programming</span>
+            <span class="skill-items">Python · C++ · Linux · Docker · Git · Bash</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Perception</span>
+            <span class="skill-items">OpenCV · YOLOv8 · Intel RealSense · Roboflow · Open3D</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Simulation</span>
+            <span class="skill-items">Gazebo · Isaac Sim · COLMAP · GLOMAP · GSplat · Fusion 360</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ RESEARCH INTERESTS ════════════════════════════════════════ -->
+    <section id="research" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>03 · Research Interests</span></div>
+        <h2 class="sec-title reveal">What I'm working toward</h2>
+
+        <div class="research-prose reveal">
+          <p>
+            The question that keeps surfacing in my work: why do autonomous systems that
+            perform well in structured environments degrade predictably when conditions
+            change? At Strider, benchmarking multiple odometry and mapping stacks across
+            multi-floor facilities and outdoor environments has shown that state estimation
+            accuracy alone doesn't determine field performance — the gap between
+            controlled-setting evaluation and real deployment is systematic, not random.
+          </p>
+          <p>
+            I want to work on making state estimation and scene understanding more
+            adaptable — combining principled probabilistic methods with learned
+            representations in ways that generalise beyond training environments. The
+            intersection of classical SLAM and learning-based approaches is, I think,
+            where the real-world reliability problem has to be addressed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ════════════════════════════════════════════════ -->
+    <section id="experience" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>04 · Experience</span></div>
+        <h2 class="sec-title reveal">Where I've worked</h2>
+
+        <div class="timeline">
+
+          <div class="tl-entry reveal">
+            <div class="tl-dot current" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-card-inner">
+                <div class="tl-header">
+                  <div class="tl-title-wrap">
+                    <div class="tl-title">Associate Robotics Engineer</div>
+                    <div class="tl-org">Strider Robotics · ARTPARK, IISc · Bangalore</div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
+                    <div class="tl-date">Jun 2025 – Present</div>
+                    <span class="tl-badge">Current</span>
+                  </div>
+                </div>
+                <ul class="tl-bullets">
+                  <li>Leading multi-floor &amp; outdoor navigation on Unitree Go2-W using custom ROS2 SDK; benchmarked SoTA SLAM packages at IISc's ARTGarage.</li>
+                  <li>Benchmarked LiDAR-Inertial Odometry candidates, made the deployment decision — now in active production fleet-wide.</li>
+                  <li>Independently designed and deployed structured log routing &amp; real-time monitoring across all deployed platforms.</li>
+                  <li><strong>20+ successful waypoint navigation trials</strong> across Go2, Go2-W, and Deep Robotics X30 Pro.</li>
                 </ul>
+                <div class="tl-tags">
+                  <span class="tl-tag">ROS2</span><span class="tl-tag">SLAM</span><span class="tl-tag">Nav2</span>
+                  <span class="tl-tag">LiDAR</span><span class="tl-tag">Python</span><span class="tl-tag">C++</span>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </div>
+          </div>
+
+          <div class="tl-entry reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-card-inner">
+                <div class="tl-header">
+                  <div class="tl-title-wrap">
+                    <div class="tl-title">Robotics Intern</div>
+                    <div class="tl-org">Strider Robotics · ARTPARK, IISc · Bangalore</div>
+                  </div>
+                  <div class="tl-date">Dec 2024 – May 2025</div>
+                </div>
+                <ul class="tl-bullets">
+                  <li>Engineered a desktop app (customtkinter + viser) for real-time GSplat visualisation and mission planning; Dockerized for stable deployment.</li>
+                  <li>Integrated Unitree Go1 into Gazebo with LiDAR, Intel RealSense, Nav2, and Slam-Toolbox for sim-to-real transfer.</li>
+                  <li>Built GPU-accelerated SfM pipelines (GLOMAP); converted GSplat models to meshes via SUGAR for Isaac Sim testing.</li>
                 </ul>
+                <div class="tl-tags">
+                  <span class="tl-tag">ROS2</span><span class="tl-tag">Gazebo</span><span class="tl-tag">Docker</span>
+                  <span class="tl-tag">GSplat</span><span class="tl-tag">GLOMAP</span>
+                </div>
               </div>
             </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="tl-entry reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-card-inner">
+                <div class="tl-header">
+                  <div class="tl-title-wrap">
+                    <div class="tl-title">Industrial Trainee</div>
+                    <div class="tl-org">Intel Unnati Summer 2023 · Intel Corporation · Remote</div>
+                  </div>
+                  <div class="tl-date">May – Jul 2023</div>
+                </div>
+                <ul class="tl-bullets">
+                  <li>Built automated road defect detection. YOLOv8 model achieved <strong>92.7% precision</strong> and <strong>92.8% mAP</strong> on IDD dataset — outperforming YOLOv5 baseline by 3.5 mAP points.</li>
+                </ul>
+                <div class="tl-tags">
+                  <span class="tl-tag">Python</span><span class="tl-tag">YOLOv8</span><span class="tl-tag">Roboflow</span>
+                  <span class="tl-tag">Computer Vision</span>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="tl-entry reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-card-inner">
+                <div class="tl-header">
+                  <div class="tl-title-wrap">
+                    <div class="tl-title">Project Intern</div>
+                    <div class="tl-org">Unique World Robotics · UAE · Remote</div>
+                  </div>
+                  <div class="tl-date">Sep 2022 – Mar 2023</div>
+                </div>
+                <ul class="tl-bullets">
+                  <li>Developed an interactive Information Kiosk integrating PyQt5, Open Weather API, and Google Drive API; deployed for daily use across a school campus.</li>
+                </ul>
+                <div class="tl-tags">
+                  <span class="tl-tag">Python</span><span class="tl-tag">PyQt5</span><span class="tl-tag">APIs</span>
+                </div>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            </div>
           </div>
 
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Skills Section -->
+    <!-- ═══ PROJECTS ══════════════════════════════════════════════════ -->
+    <section id="projects" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>05 · Projects</span></div>
+        <h2 class="sec-title reveal">Things I've built</h2>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+        <div class="proj-list">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+          <a href="https://github.com/jj7258/unitree_go2w_ros2" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">01</div>
+              <div class="proj-content">
+                <div class="proj-title">unitree_go2w_ros2</div>
+                <div class="proj-desc">Open-source ROS2 integration for the Unitree Go2-W — custom SDK for low-level control, state estimation, and URDF configurations. Foundational bridge for all SoTA SLAM and navigation research on the Go2-W platform.</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">ROS2</span><span class="proj-tag">C++</span><span class="proj-tag">SLAM</span>
+                  <span class="proj-tag">Nav2</span><span class="proj-tag">URDF</span>
+                  <span class="proj-chip">Open Source · 2025</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
 
-      <div class="container">
+          <a href="https://github.com/jj7258/NavRover" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">02</div>
+              <div class="proj-content">
+                <div class="proj-title">NavRover</div>
+                <div class="proj-desc">Open-source ROS-based autonomous rover with 4-wheeled rocker mechanism. DWA planner; 2D and 3D environment mapping (Octomap + RTABMap). Built during Buildspace Nights &amp; Weekends S5.</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">ROS Noetic</span><span class="proj-tag">Python</span><span class="proj-tag">Gazebo</span>
+                  <span class="proj-tag">Docker</span><span class="proj-chip">Aug 2024</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
 
-        <div class="row">
+          <a href="https://drive.google.com/file/d/1H4sHGYRPGfMQBwuxDTiyrNKeRgvNtVIF/view" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">03</div>
+              <div class="proj-content">
+                <div class="proj-title">Autonomous Exploration Rover</div>
+                <div class="proj-desc">Final-year B.Tech thesis. Autonomous rover with IMU, Hall effect encoders, depth camera, Nvidia Jetson Nano, and 6-DOF manipulator. GMapping + RTABMap + ROS Nav Stack for 2D/3D SLAM. 2nd place among final-year projects.</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">ROS Noetic</span><span class="proj-tag">Jetson Nano</span><span class="proj-tag">RTABMap</span>
+                  <span class="proj-chip">B.Tech Thesis · Apr 2024</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+          <a href="https://github.com/jj7258/intelunnati_Byte-Brigade" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">04</div>
+              <div class="proj-content">
+                <div class="proj-title">Pothole Detection — Deep Learning</div>
+                <div class="proj-desc">Road defect detection for Indian infrastructure. YOLOv8 model achieved 92.7% precision and 92.8% mAP on IDD dataset — outperforming YOLOv5 baseline (89.3% mAP).</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">YOLOv8</span><span class="proj-tag">Python</span><span class="proj-tag">Roboflow</span>
+                  <span class="proj-chip">Intel Unnati · Jul 2023</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+          <a href="https://github.com/jj7258/ROS-Based-Rover-With-3DMapping-and-User-Interface" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">05</div>
+              <div class="proj-content">
+                <div class="proj-title">ROS 3D Mapping Rover + React UI</div>
+                <div class="proj-desc">Teleoperated rover with 4-wheeled rocker mechanism and React web interface for 3D environment mapping. Presented at KTU KETCON 2024.</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">ROS1</span><span class="proj-tag">React</span><span class="proj-tag">RTABMap</span>
+                  <span class="proj-chip">Jun 2023</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/jj7258/expert-guide" target="_blank" rel="noopener" class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">06</div>
+              <div class="proj-content">
+                <div class="proj-title">Information Kiosk — School Campus</div>
+                <div class="proj-desc">Interactive campus kiosk with real-time weather, Google Drive content, and navigation. Deployed for daily use at Unique World Robotics, UAE during a 7-month internship.</div>
+                <div class="proj-tags">
+                  <span class="proj-tag">Python</span><span class="proj-tag">PyQt5</span>
+                  <span class="proj-tag">OpenWeather API</span><span class="proj-chip">Mar 2023</span>
+                </div>
+              </div>
+              <span class="proj-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EDUCATION ═════════════════════════════════════════════════ -->
+    <section id="education" class="block">
+      <div class="wrap">
+        <div class="sec-eyebrow"><span class="dot"></span><span>06 · Education</span></div>
+        <h2 class="sec-title reveal">Where I studied</h2>
+
+        <div class="edu-bento reveal">
+
+          <div class="edu-card">
+            <div class="edu-card-inner">
+              <span class="edu-badge">B.Tech · Robotics &amp; Automation</span>
+              <h3 class="edu-inst">Saintgits College of Engineering</h3>
+              <p class="edu-period">Dec 2020 – Jul 2024 · Kottayam, Kerala</p>
+              <div class="edu-stats">
+                <span>CGPA <span class="accent-text">8.31</span> / 10</span>
+                <span>Rank <span class="accent-text">6th</span> / 68</span>
+              </div>
+              <ul class="edu-notes">
+                <li>Thesis: Autonomous Exploration Rover</li>
+                <li>2nd Place — Final Year Project</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+          <div class="edu-card">
+            <div class="edu-card-inner">
+              <span class="edu-badge">B.Sc. · Data Science &amp; Applications</span>
+              <h3 class="edu-inst">IIT Madras</h3>
+              <p class="edu-period">Sep 2021 – Present · Chennai, Tamil Nadu</p>
+              <div class="edu-stats">
+                <span>GPA <span class="accent-text">7.0</span> / 10</span>
+                <span>Online + Hybrid</span>
+              </div>
+              <ul class="edu-notes">
+                <li>Pursued in parallel with B.Tech</li>
+                <li>IIT Madras Robotics Club</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+            </div>
           </div>
 
         </div>
 
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-calendar4-week icon"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+        <div class="awards reveal">
+          <div class="awards-inner">
+            <div class="awards-head">// Awards &amp; Certifications</div>
+            <div class="award-list">
+              <div class="award-row">
+                <i class="bi bi-trophy-fill award-icon"></i>
+                <div class="award-body">
+                  <strong>Rank Holder — 6th / 68</strong>
+                  <span>B.Tech Robotics &amp; Automation · Saintgits 2024</span>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+              <div class="award-row">
+                <i class="bi bi-award-fill award-icon"></i>
+                <div class="award-body">
+                  <strong>2nd Place — Final Year Project</strong>
+                  <span>Autonomous Exploration Rover · RB-B 2020–24</span>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+              <div class="award-row">
+                <i class="bi bi-cloud-fill award-icon"></i>
+                <div class="award-body">
+                  <strong>Google Cloud Foundations</strong>
+                  <span>Google Cloud · Oct 2023</span>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+              <div class="award-row">
+                <i class="bi bi-patch-check-fill award-icon"></i>
+                <div class="award-body">
+                  <strong>Foundation in Programming &amp; Data Science</strong>
+                  <span>IIT Madras · May 2023</span>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
       </div>
+    </section>
 
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
+    <!-- ═══ CONTACT ═══════════════════════════════════════════════════ -->
+    <section id="contact" class="closing">
+      <div class="closing-inner">
+        <h2>Get in touch</h2>
+        <p class="sub">
+          Open to collaboration in autonomous navigation research, SLAM systems,
+          and robotics engineering roles.
+        </p>
+        <div class="closing-btns">
+          <a href="mailto:joelgj02@gmail.com" class="btn-pill">
+            <span>Send a message</span>
+            <span class="iw" aria-hidden="true">→</span>
+          </a>
+          <a href="https://github.com/jj7258" target="_blank" rel="noopener" class="btn-ghost">
+            View GitHub
+          </a>
+        </div>
+        <div class="closing-links">
+          <div class="cl-row">
+            <i class="bi bi-envelope-fill"></i>
+            <span>joelgj02@gmail.com</span>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="cl-row">
+            <i class="bi bi-github"></i>
+            <span>github.com/jj7258</span>
+          </div>
+          <div class="cl-row">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Bangalore, India</span>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+  <footer>
+    <div class="footer-row">
+      <span class="footer-colophon">Joel Georgie Jacob · Bangalore, India · 2026</span>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/jj7258" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=14"></script>
 
 </body>
-
 </html>
