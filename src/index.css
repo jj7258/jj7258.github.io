@@ -1160,6 +1160,91 @@ footer a:hover {
   }
 }
 
+/* === Mobile menu === */
+.menu-toggle {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--canvas);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: menu-fade 240ms var(--ease) both;
+}
+
+@keyframes menu-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: var(--soft-panel-muted);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 240ms var(--ease);
+}
+
+.mobile-menu-close:hover {
+  background: var(--glass-hover);
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 10px 24px;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 10vw, 54px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  color: var(--ink);
+  transition: color 200ms var(--ease), opacity 200ms var(--ease);
+}
+
+.mobile-nav a:hover {
+  color: var(--accent-solid);
+}
+
+.mobile-nav-cta {
+  margin-top: 20px;
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  padding: 12px 28px !important;
+  border-radius: 999px;
+  background: var(--ink) !important;
+  color: var(--canvas) !important;
+  transition: opacity 220ms var(--ease) !important;
+}
+
+.mobile-nav-cta:hover {
+  opacity: 0.88;
+  color: var(--canvas) !important;
+}
+
 @media (max-width: 760px) {
   .nav-shell {
     top: 14px;
@@ -1174,6 +1259,40 @@ footer a:hover {
 
   .nav-links {
     display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 999px;
+    background: var(--soft-panel-muted);
+    color: var(--muted-ink);
+    cursor: pointer;
+    transition: color 280ms var(--ease), background 280ms var(--ease);
+  }
+
+  .menu-toggle:hover {
+    background: var(--glass-hover);
+    color: var(--ink);
+  }
+
+  .portrait-card .bezel-core {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .portrait-frame,
+  .portrait-frame img {
+    min-height: 260px;
+    max-height: 320px;
+  }
+
+  .portrait-frame img {
+    object-position: center 18%;
   }
 
   .hero {
