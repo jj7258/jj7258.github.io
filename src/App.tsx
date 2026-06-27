@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, FileText, Github, Linkedin, Mail, MapPin, Moon, Sun } from "lucide-react";
+import { ArrowRight, ArrowUpRight, FileText, Github, Linkedin, Mail, MapPin, Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -243,8 +243,14 @@ function DoubleBezel({ children, className = "", style }: { children: React.Reac
 
 function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [menuOpen, setMenuOpen] = useState(false);
   const activeSection = useActiveSection();
   useReveal();
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -276,9 +282,26 @@ function App() {
           <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}>
             {theme === "dark" ? <Sun size={15} strokeWidth={1.8} /> : <Moon size={15} strokeWidth={1.8} />}
           </button>
+          <button className="menu-toggle" type="button" onClick={() => setMenuOpen(true)} aria-label="Open menu">
+            <Menu size={16} strokeWidth={1.8} />
+          </button>
           <PillCta href="#contact">Contact</PillCta>
         </header>
       </div>
+
+      {menuOpen && (
+        <div className="mobile-menu" role="dialog" aria-modal="true">
+          <button className="mobile-menu-close" type="button" onClick={() => setMenuOpen(false)} aria-label="Close menu">
+            <X size={18} strokeWidth={1.8} />
+          </button>
+          <nav className="mobile-nav">
+            {navLinks.map((link) => (
+              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>{link.label}</a>
+            ))}
+            <a href="#contact" className="mobile-nav-cta" onClick={() => setMenuOpen(false)}>Contact</a>
+          </nav>
+        </div>
+      )}
 
       <main>
         <section id="hero" className="wrap hero reveal">
